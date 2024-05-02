@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Everett-Light";
+    src: url("fonts/Everett-Light.otf") format("opentype");
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "Everett-Regular";
+    src: url("fonts/Everett-Regular.otf") format("opentype");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Everett-Medium";
+    src: url("fonts/Everett-Medium.otf") format("opentype");
+    font-weight: 500;
+  }
+}
+
+/* p {
+  font-family: "Everett-Regular", "sans-serif";
+} */
+
+:root {
+  --color-default-black: #000000;
+  --color-default-white: #ffffff;
+  --color-default-red: #dd000c;
+  --color-default-green: #36c09a;
+
+  --color-bg-cyan: #66e0ec;
+  --color-bg-yellow: #ffc900;
+}
