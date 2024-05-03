@@ -9,5 +9,5 @@ export default meta;
 type Story = StoryObj<typeof Cta>;
 
 export const Template: Story = {
-  render: (args) => <Cta {...args} />,
+  render: (args) => <Cta {...args}>Call to action</Cta>,
 };
