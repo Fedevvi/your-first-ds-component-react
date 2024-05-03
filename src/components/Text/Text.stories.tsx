@@ -13,6 +13,10 @@ const meta: Meta<typeof Text> = {
       control: { type: "select" },
     },
   },
+  args: {
+    size: "sm",
+    weight: "regular",
+  },
 };
 
 export default meta;

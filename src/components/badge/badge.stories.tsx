@@ -9,6 +9,9 @@ const meta: Meta<typeof Badge> = {
       control: { type: "select" },
     },
   },
+  args: {
+    variant: "success",
+  },
 };
 
 export default meta;
