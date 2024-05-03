@@ -14,14 +14,16 @@ export default meta;
 type Story = StoryObj<typeof Text>;
 
 export const Template: Story = {
-  render: (args) => (
+  render: () => (
     <Card className="">
-      <Badge variant="error" className="">
-        A rischio sospensione
-      </Badge>
+      <div className="flex w-full justify-end">
+        <Badge variant="error" className="mb-1">
+          A rischio sospensione
+        </Badge>
+      </div>
       <CardHeader className="border-b">
         <div className="pb-1">
-          <div className="flex items-center py-1 gap-3">
+          <div className="flex items-center gap-3">
             <GasOutline />
             <Text size="sm" weight="medium">
               Gas
@@ -33,28 +35,24 @@ export const Template: Story = {
         </div>
       </CardHeader>
       <CardContent>
-        <div className="flex gap-2 py-3">
+        <div className="flex gap-2 py-3 pr-4">
           <Alert />
           <Text size="xs" weight="regular">
             Dobbiamo chiederti di compilare un modulo. Entra per scaricarlo.
           </Text>
         </div>
-        <Text size="xs" weight="light">
+        <Text size="xs" weight="light" className="pb-1">
           Per questa fornitura pagherai
         </Text>
-        <Text
-          size="xs"
-          weight="regular"
-          className="line-through leading-none pt-1"
-        >
+        <Text size="xs" weight="regular" className="line-through leading-none ">
           65,46 €
         </Text>
 
         <div className="flex items-top gap-1">
-          <Title as="h1" className="leading-none">
+          <Title as="h1" className="leading-none mt-[-5px]">
             57
           </Title>
-          <div className="pt-1">
+          <div>
             <Title as="h4" className="leading-none">
               , 99 €
             </Title>
