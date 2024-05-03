@@ -47,14 +47,13 @@ export const Template: Story = {
         <Text size="xs" weight="regular" className="line-through leading-none ">
           65,46 €
         </Text>
-
-        <div className="flex items-top gap-1">
+        <div className="flex items-top gap-1  mb-[-4px]">
           <Title as="h1" className="leading-none mt-[-5px]">
             57
           </Title>
           <div>
             <Title as="h4" className="leading-none">
-              , 99 €
+              ,99 €
             </Title>
             <Text size="xs" weight="light" className="leading-none">
               al mese,
