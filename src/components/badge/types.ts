@@ -1,6 +1,9 @@
+import { VariantProps } from "class-variance-authority";
+
 import { ComponentPropsWithoutRef, ReactNode } from "react";
+import { badgeStyles } from "./styles";
 
 export type BadgeProps = {
-  variant?: "error" | "success" | "black" | "white";
   children: ReactNode;
-} & ComponentPropsWithoutRef<"div">;
+} & ComponentPropsWithoutRef<"div"> &
+  VariantProps<typeof badgeStyles>;

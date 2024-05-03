@@ -15,7 +15,11 @@ module.exports = {
       regular: ["Everett-Regular", "sans-serif"],
       medium: ["Everett-Medium", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      lineHeight: {
+        "leading-4.5": "18",
+      },
+    },
   },
   plugins: [require("@tailwindcss/forms")],
 };
