@@ -24,7 +24,7 @@ export const Template: Story = {
       <CardHeader className="border-b">
         <div className="pb-1">
           <div className="flex items-center gap-3">
-            <GasOutline />
+            <GasOutline className="fill-black h-4 w-4" />
             <Text size="sm" weight="medium">
               Gas
             </Text>
@@ -36,7 +36,7 @@ export const Template: Story = {
       </CardHeader>
       <CardContent>
         <div className="flex gap-2 py-3 pr-4">
-          <Alert />
+          <Alert className="fill-black h-4 w-4" />
           <Text size="xs" weight="regular">
             Dobbiamo chiederti di compilare un modulo. Entra per scaricarlo.
           </Text>
