@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Card, CardButton, CardContent, CardHeader } from "./card";
+import { Alert, GasOutline } from "../../../public/icons";
 import { Badge } from "../badge/badge";
-import { Text } from "../text/text";
-import { GasOutline } from "../../../public/icons/gasOutline";
-import { Alert } from "../../../public/icons/alert";
+import { Cta } from "../cta";
+import { Text } from "../text";
 import { Title } from "../title";
+import { Card, CardButton, CardContent, CardHeader } from "./card";
 
 const meta: Meta<typeof Card> = {
   //   component: Card,
@@ -64,7 +64,9 @@ export const Template: Story = {
           </div>
         </div>
       </CardContent>
-      <CardButton />
+      <CardButton>
+        <Cta>Monitora e gestisci</Cta>
+      </CardButton>
     </Card>
   ),
 };

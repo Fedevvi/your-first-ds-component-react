@@ -1,8 +1,7 @@
 import classNames from "classnames";
 import { forwardRef } from "react";
-import { CardHeaderProps, CardProps } from "./types";
-import { cardHeaderStyles, cardStyles } from "./styles";
-import { Cta } from "../cta/cta";
+import { CardProps } from "./types";
+import { cardStyles } from "./styles";
 
 const Card = forwardRef<HTMLDivElement, CardProps>(
   ({ className, children, ...rest }, ref) => {
@@ -20,14 +19,10 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
 
 Card.displayName = "Card";
 
-const CardHeader = forwardRef<HTMLDivElement, CardHeaderProps>(
+const CardHeader = forwardRef<HTMLDivElement, CardProps>(
   ({ className, children, ...rest }, ref) => {
     return (
-      <div
-        ref={ref}
-        className={classNames(cardHeaderStyles({}), className)}
-        {...rest}
-      >
+      <div ref={ref} className={className} {...rest}>
         {children}
       </div>
     );
@@ -37,9 +32,11 @@ const CardHeader = forwardRef<HTMLDivElement, CardHeaderProps>(
 CardHeader.displayName = "CardHeader";
 
 const CardContent = forwardRef<HTMLDivElement, CardProps>(
-  ({ className, ...rest }, ref) => {
+  ({ className, children, ...rest }, ref) => {
     return (
-      <div ref={ref} className={classNames(cardStyles, className)} {...rest} />
+      <div ref={ref} className={className} {...rest}>
+        {children}
+      </div>
     );
   }
 );
@@ -47,10 +44,11 @@ const CardContent = forwardRef<HTMLDivElement, CardProps>(
 CardContent.displayName = "CardContent";
 
 const CardButton = forwardRef<HTMLDivElement, CardProps>(
-  ({ className, ...rest }, ref) => {
+  ({ className, children, ...rest }, ref) => {
     return (
-      <Cta>Monitora e gestisci</Cta>
-      //   <div ref={ref} className={classNames(cardStyles, className)} {...rest} />
+      <div ref={ref} className={className} {...rest}>
+        {children}
+      </div>
     );
   }
 );
