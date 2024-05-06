@@ -4,18 +4,18 @@
 
 @layer base {
   @font-face {
-    font-family: "Everett-Light";
-    src: url("fonts/Everett-Light.otf") format("opentype");
+    font-family: "Roboto-Light";
+    src: url("fonts/Roboto-Light.otf") format("truetype");
     font-weight: 300;
   }
   @font-face {
-    font-family: "Everett-Regular";
-    src: url("fonts/Everett-Regular.otf") format("opentype");
+    font-family: "Roboto-Regular";
+    src: url("fonts/Roboto-Regular.otf") format("truetype");
     font-weight: 400;
   }
   @font-face {
-    font-family: "Everett-Medium";
-    src: url("fonts/Everett-Medium.otf") format("opentype");
+    font-family: "Roboto-Medium";
+    src: url("fonts/Roboto-Medium.otf") format("truetype");
     font-weight: 500;
   }
 }

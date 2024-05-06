@@ -11,9 +11,9 @@ module.exports = {
       yellow: "var(--color-bg-yellow)",
     },
     fontFamily: {
-      light: ["Everett-Light", "sans-serif"],
-      regular: ["Everett-Regular", "sans-serif"],
-      medium: ["Everett-Medium", "sans-serif"],
+      light: ["Roboto-Light", "sans-serif"],
+      regular: ["Roboto-Regular", "sans-serif"],
+      medium: ["Roboto-Medium", "sans-serif"],
     },
   },
   plugins: [require("@tailwindcss/forms")],
