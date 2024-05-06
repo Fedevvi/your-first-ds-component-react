@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Roboto-Light";
+    src: url("fonts/Roboto-Light.otf") format("truetype");
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "Roboto-Regular";
+    src: url("fonts/Roboto-Regular.otf") format("truetype");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Roboto-Medium";
+    src: url("fonts/Roboto-Medium.otf") format("truetype");
+    font-weight: 500;
+  }
+}
+
+:root {
+  --color-default-black: #000000;
+  --color-default-white: #ffffff;
+  --color-default-red: #dd000c;
+  --color-default-green: #36c09a;
+
+  --color-bg-cyan: #66e0ec;
+  --color-bg-yellow: #ffc900;
+}
