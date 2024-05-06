@@ -1,8 +1,8 @@
 import classNames from "classnames";
 import { forwardRef } from "react";
 
-import type { TitleElement, TitleProps } from "./types";
 import { titleStyles } from "./styles";
+import { TitleElement, TitleProps } from "./types";
 
 export const Title = forwardRef<TitleElement, TitleProps>(
   ({ as = "h1", className, ...props }, ref) => {

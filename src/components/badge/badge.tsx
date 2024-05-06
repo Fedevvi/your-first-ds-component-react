@@ -1,9 +1,9 @@
 import classNames from "classnames";
+import { forwardRef } from "react";
 
+import { Text } from "../text";
 import { badgeStyles } from "./styles";
 import { BadgeProps } from "./types";
-import { forwardRef } from "react";
-import { Text } from "../text/text";
 
 export const Badge = forwardRef<HTMLDivElement, BadgeProps>(
   ({ variant, children, className, ...rest }, ref) => {
