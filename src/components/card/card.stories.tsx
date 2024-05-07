@@ -6,16 +6,14 @@ import { Text } from "../text";
 import { Title } from "../title";
 import { Card, CardFooter, CardContent, CardHeader } from "./card";
 
-const meta: Meta<typeof Card> = {
-  //   component: Card,
-};
+const meta: Meta<typeof Card> = {};
 
 export default meta;
 type Story = StoryObj<typeof Text>;
 
 export const Template: Story = {
   render: () => (
-    <Card className="">
+    <Card>
       <div className="flex w-full justify-end">
         <Badge variant="error" className="mb-1">
           A rischio sospensione
