@@ -43,7 +43,7 @@ const CardContent = forwardRef<HTMLDivElement, CardProps>(
 
 CardContent.displayName = "CardContent";
 
-const CardButton = forwardRef<HTMLDivElement, CardProps>(
+const CardFooter = forwardRef<HTMLDivElement, CardProps>(
   ({ className, children, ...rest }, ref) => {
     return (
       <div ref={ref} className={className} {...rest}>
@@ -53,6 +53,6 @@ const CardButton = forwardRef<HTMLDivElement, CardProps>(
   }
 );
 
-CardButton.displayName = "CardButton";
+CardFooter.displayName = "CardFooter";
 
-export { Card, CardHeader, CardContent, CardButton };
+export { Card, CardHeader, CardContent, CardFooter };

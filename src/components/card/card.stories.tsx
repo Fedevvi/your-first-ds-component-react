@@ -4,7 +4,7 @@ import { Badge } from "../badge/badge";
 import { Cta } from "../cta";
 import { Text } from "../text";
 import { Title } from "../title";
-import { Card, CardButton, CardContent, CardHeader } from "./card";
+import { Card, CardFooter, CardContent, CardHeader } from "./card";
 
 const meta: Meta<typeof Card> = {
   //   component: Card,
@@ -64,9 +64,9 @@ export const Template: Story = {
           </div>
         </div>
       </CardContent>
-      <CardButton>
+      <CardFooter>
         <Cta>Monitora e gestisci</Cta>
-      </CardButton>
+      </CardFooter>
     </Card>
   ),
 };
