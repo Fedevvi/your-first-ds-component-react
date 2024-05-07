@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import Card from ".";
 import { Alert, GasOutline } from "../../../public/icons";
 import { Badge } from "../badge/badge";
 import { Cta } from "../cta";
 import { Text } from "../text";
 import { Title } from "../title";
-import { Card, CardFooter, CardContent, CardHeader } from "./card";
 
 const meta: Meta<typeof Card> = {};
 
@@ -13,13 +13,13 @@ type Story = StoryObj<typeof Text>;
 
 export const Template: Story = {
   render: () => (
-    <Card>
+    <Card.Root>
       <div className="flex w-full justify-end">
         <Badge variant="error" className="mb-1">
           A rischio sospensione
         </Badge>
       </div>
-      <CardHeader className="border-b">
+      <Card.Header className="border-b">
         <div className="pb-1">
           <div className="flex items-center gap-3">
             <GasOutline className="fill-black h-4 w-4" />
@@ -31,8 +31,8 @@ export const Template: Story = {
             Pizza Risorgimento 3, Amandola (FM)
           </Text>
         </div>
-      </CardHeader>
-      <CardContent>
+      </Card.Header>
+      <Card.Content>
         <div className="flex gap-2 py-3 pr-4">
           <Alert className="fill-black h-4 w-4" />
           <Text size="xs" weight="regular">
@@ -61,10 +61,10 @@ export const Template: Story = {
             </Text>
           </div>
         </div>
-      </CardContent>
-      <CardFooter>
+      </Card.Content>
+      <Card.Footer>
         <Cta>Monitora e gestisci</Cta>
-      </CardFooter>
-    </Card>
+      </Card.Footer>
+    </Card.Root>
   ),
 };
