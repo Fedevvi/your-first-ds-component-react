@@ -15,6 +15,14 @@ module.exports = {
       regular: ["Roboto-Regular", "sans-serif"],
       medium: ["Roboto-Medium", "sans-serif"],
     },
+    spacing: {
+      base: "4px",
+      "2xs": "8px",
+      xxs: "12px",
+      xs: "16px",
+      sm: "24px",
+      md: "32px",
+    },
   },
   plugins: [require("@tailwindcss/forms")],
 };
