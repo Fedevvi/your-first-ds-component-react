@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import { forwardRef } from "react";
 
-import { ArrowRight } from "../../../public/icons/arrowRight";
+import { ArrowRight } from "../../../public/icons/arrow-right";
 import { Text } from "../text";
 import { ctaStyles } from "./styles";
 import { CtaProps } from "./types";
@@ -14,10 +14,10 @@ export const Cta = forwardRef<HTMLButtonElement, CtaProps>(
         className={classNames(ctaStyles({}), className)}
         {...rest}
       >
-        <Text size="sm" weight="medium" className="pt-4">
+        <Text size="sm" weight="medium">
           {children}
         </Text>
-        <ArrowRight className="fill-black h-4 w-4" />
+        <ArrowRight className="fill-black h-xs w-xs" />
       </button>
     );
   }

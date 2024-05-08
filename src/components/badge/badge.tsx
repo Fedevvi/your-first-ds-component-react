@@ -13,7 +13,13 @@ export const Badge = forwardRef<HTMLDivElement, BadgeProps>(
         className={classNames(badgeStyles({ variant }), className)}
         {...rest}
       >
-        {typeof children === "string" ? <Text>{children}</Text> : children}
+        {typeof children === "string" ? (
+          <Text size="xs" weight="regular">
+            {children}
+          </Text>
+        ) : (
+          children
+        )}
       </div>
     );
   }

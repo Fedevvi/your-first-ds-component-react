@@ -1,7 +1,7 @@
 import { cva } from "class-variance-authority";
 
 const badgeStyles = cva(
-  "uppercase font-medium text-center inline-flex items-center px-2",
+  "uppercase font-medium text-center inline-flex items-center px-2xs",
   {
     variants: {
       variant: {
