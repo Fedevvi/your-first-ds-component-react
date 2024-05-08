@@ -19,18 +19,16 @@ export const Template: Story = {
           A rischio sospensione
         </Badge>
       </div>
-      <Card.Header className="border-b">
-        <div className="pb-base">
-          <div className="flex items-center gap-xxs">
-            <GasOutline className="fill-black h-xs w-xs" />
-            <Text size="sm" weight="medium">
-              Gas
-            </Text>
-          </div>
-          <Text size="xs" weight="light">
-            Pizza Risorgimento 3, Amandola (FM)
+      <Card.Header>
+        <div className="flex items-center gap-xxs">
+          <GasOutline className="fill-black h-xs w-xs" />
+          <Text size="sm" weight="medium">
+            Gas
           </Text>
         </div>
+        <Text size="xs" weight="light">
+          Pizza Risorgimento 3, Amandola (FM)
+        </Text>
       </Card.Header>
       <Card.Content>
         <div className="flex gap-2xs py-xxs pr-xs">
@@ -63,7 +61,7 @@ export const Template: Story = {
         </div>
       </Card.Content>
       <Card.Footer>
-        <Cta>Monitora e gestisci</Cta>
+        <Cta className="pt-xs">Monitora e gestisci</Cta>
       </Card.Footer>
     </Card.Root>
   ),
