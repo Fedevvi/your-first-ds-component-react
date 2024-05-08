@@ -9,11 +9,11 @@ import {
 } from "./styles";
 
 const Card = forwardRef<HTMLDivElement, CardProps>(
-  ({ className, children, ...rest }, ref) => {
+  ({ supply, className, children, ...rest }, ref) => {
     return (
       <div
         ref={ref}
-        className={classNames(cardStyles({}), className)}
+        className={classNames(cardStyles({ supply }), className)}
         {...rest}
       >
         {children}

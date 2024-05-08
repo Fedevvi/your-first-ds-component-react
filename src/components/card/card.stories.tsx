@@ -6,14 +6,26 @@ import { Cta } from "../cta";
 import { Text } from "../text";
 import { Title } from "../title";
 
-const meta: Meta<typeof Card> = {};
+type CardType = typeof Card.Root &
+  typeof Card.Header &
+  typeof Card.Content &
+  typeof Card.Footer;
+
+const meta: Meta<CardType> = {
+  argTypes: {
+    supply: {
+      options: ["gas", "electricity"],
+      control: { type: "select" },
+    },
+  },
+};
 
 export default meta;
-type Story = StoryObj<typeof Text>;
+type Story = StoryObj<CardType>;
 
 export const Template: Story = {
-  render: () => (
-    <Card.Root>
+  render: (args) => (
+    <Card.Root {...args}>
       <div className="flex w-full justify-end">
         <Badge variant="error" className="mb-base">
           A rischio sospensione
@@ -23,7 +35,7 @@ export const Template: Story = {
         <div className="flex items-center gap-xxs">
           <GasOutline className="fill-black h-xs w-xs" />
           <Text size="sm" weight="medium">
-            Gas
+            {args.supply === "gas" ? "Gas" : "Luce"}
           </Text>
         </div>
         <Text size="xs" weight="light">
