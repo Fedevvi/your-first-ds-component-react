@@ -51,7 +51,7 @@ export const Template: Story = {
             </Text>
           </div>
           <Text size="xs" weight="light">
-            Pizza Risorgimento 3, Amandola (FM)
+            Piazza Risorgimento 3, Amandola (FM)
           </Text>
         </Card.Header>
         <Card.Content>
@@ -64,11 +64,7 @@ export const Template: Story = {
           <Text size="xs" weight="light" className="pb-base">
             Per questa fornitura pagherai
           </Text>
-          <Text
-            size="xs"
-            weight="regular"
-            className="line-through leading-none"
-          >
+          <Text size="xs" weight="medium" className="line-through leading-none">
             65,46 €
           </Text>
           <div className="flex items-top gap-base  mb-[-4px]">
