@@ -12,3 +12,6 @@ Clone it, run `yarn` and then `yarn storybook` to view the components.
 - CVA https://cva.style/docs
 - Storybook https://storybook.js.org/
 - Tailwind https://tailwindcss.com/
+
+### The card
+You can find the card that we made during the workshop as a pull request for this project.
