@@ -7,3 +7,8 @@ https://www.belkadigital.com/webinars/webinar-create-your-first-design-system-co
 
 ### Project set up
 Clone it, run `yarn` and then `yarn storybook` to view the components.
+
+### Resources
+- CVA https://cva.style/docs
+- Storybook https://storybook.js.org/
+- Tailwind https://tailwindcss.com/
