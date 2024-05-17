@@ -16,3 +16,6 @@ If you want to see the card's code you can go inside the `Pull request` tab. The
 - CVA https://cva.style/docs
 - Storybook https://storybook.js.org/
 - Tailwind https://tailwindcss.com/
+
+### The card
+You can find the card that we made during the workshop as a pull request for this project.
